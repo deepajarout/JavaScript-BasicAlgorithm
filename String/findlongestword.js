@@ -28,7 +28,7 @@ function findLongestWordBasic(str){
 
 function findLongestWordIntermediate(str){
   
-    return  str.split(' ').reduce(function(x,y){ //split() is a string function  which is used to split or you can say to cut a string into smaller sections or pieces
+    return  str.split(' ').reduce(function(x,y){ // reduce() is array method Returns the accumulated result from the last call of the callback function
       
     return  Math.max(x,y.length);
       
@@ -46,7 +46,8 @@ function findLongestWordIntermediate(str){
 
 function findLongestWord(str){
   
-    str = str.split(' '); // reduce() is array method Returns the accumulated result from the last call of the callback function
+    str = str.split(' '); //split() is a string function  which is used to split or you can say to cut a string into smaller sections or pieces
+
     
      if (str.length==1){
        return str[0].length;
